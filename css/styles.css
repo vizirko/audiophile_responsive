@@ -1,0 +1,537 @@
+/* --/ RESET PROPERTIES /-- */
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+}
+/* --/ END RESET PROPERTIES /-- */
+
+/* --/ COMMON CLASSES /-- */
+.content {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.flexcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* --/ END COMMON CLASSES /-- */
+
+/* --/ MAIN STYLES /-- */
+header {
+    background-color: #131313;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 8px 8px;
+}
+
+header .content {
+    background: url("../images/bg/headphones_bg.svg") 
+                no-repeat 440px -40px #131313;
+    border-radius: 8px;
+    min-height: 730px;
+}
+
+.header-top {
+    padding: 35px 0;
+    border-bottom: 1px solid #fff;
+}
+
+header ul.flexcon {
+    justify-content: flex-start;
+    gap: 34px;
+    width: 550px;
+}
+
+li {
+    font: 700 13px/25px 'Manrope', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    display: inline;
+}
+
+.header-top > a:first-child {
+   height: 25px;
+}
+
+.header-bottom {
+    height: 632px;
+    padding: 128px 0 158px;
+}
+
+header article {
+    max-width: 398px;
+    min-height: 346px;
+}
+
+h1 {
+    font: 400 14px/19px 'Manrope', sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 24px;
+}
+
+.itemh2 {
+    font: 700 56px/58px 'Manrope', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.description {
+    font: 500 15px/25px 'Manrope', sans-serif;
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 40px;
+}
+
+.see-product {
+    font: 700 13px/18px 'Manrope', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #D87D4A;
+    width: 160px;
+    height: 48px;
+    cursor: pointer;
+}
+
+main {
+    margin-bottom: 200px;
+}
+
+.main-item .see-product {
+    background-color: #000;
+}
+
+.middle-nav {
+    padding: 120px 0 168px;
+}
+
+.middle-nav ul.flexcon {
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.middle-nav li {
+    min-height: 285px;
+}
+
+.middle-nav li.flexcon {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mid-nav-content {
+    background: url("../images/bg/shadow.png") 
+                no-repeat 50% 20% #F1F1F1;
+    width: 350px;
+    min-height: 204px;
+    border-radius: 8px;
+    padding: 110px 0 30px;
+    position: relative;
+}
+
+
+.headphones::before,
+.speakers::before,
+.earphones::before
+{
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -48%);
+}
+
+.headphones::before {
+    content: url("../images/bg/headphones.svg");
+}
+
+.speakers::before {
+    content: url("../images/bg/speakers.svg");
+}
+
+.earphones::before {
+    content: url("../images/bg/earphones.svg");
+}
+
+.item {
+    font: 700 18px/25px 'Manrope', sans-serif;
+    letter-spacing: 1.28571px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.shop {
+    font: 700 13px/18px 'Manrope', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.shop::after {
+    content: '';
+    padding-left: 18px;
+    background: url("../images/icons/arrow.svg") 
+                no-repeat center right;
+}
+
+.main-item {
+    height: 560px;
+    background: url("../images/bg/rings_bg.png") 
+                no-repeat -10px center #D87D4A;
+    border-radius: 8px;
+    margin-bottom: 48px;
+    flex-wrap: nowrap;
+}
+
+.main-item img {
+    position: relative;
+    top: 48px;
+    left: 100px;
+}
+
+.main-item article {
+    max-width: 50%;
+    padding: 0 95px;
+}
+
+.second-item {
+    height: 320px;
+    background: url("../images/bg/zx7_bg.png") 
+                no-repeat;
+    padding: 101px 811px 101px 95px;
+    margin-bottom: 48px;
+}
+
+.second-item article {
+    width: 204px;
+}
+
+.second-item .see-product,
+.third-item .see-product {
+    color: #000;
+    background-color: inherit;
+    border: 1px solid #000;
+}
+
+h3 {
+    font: 700 28px/38px 'Manrope', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+}
+
+.third-item {
+    margin-bottom: 200px;
+}
+
+.third-item div {
+    width: 540px;
+    height: 320px;
+    border-radius: 8px;
+}
+
+.third-item div:first-child {
+    background: url("../images/bg/yx1_bg.png") 
+                no-repeat;
+}
+
+.third-item div:last-child {
+    background-color: #F1F1F1;
+    padding: 101px 198px 101px 95px;
+}
+
+.about {
+    height: 588px;
+    background: url("../images/bg/man.png") 
+                no-repeat center right;
+    padding: 146px 0;
+}
+
+.about article {
+    width: 445px;
+}
+
+.about h1 {
+    font: 700 40px/44px 'Manrope', sans-serif;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 32px;
+    opacity: 1;
+}
+
+.about h1 span {
+    color: #D87D4A;
+}
+
+.about p {
+    font: 500 15px/25px 'Manrope', sans-serif;
+    color: #000000;
+    opacity: 0.5;
+}
+
+footer {
+    background-color: #101010;
+    height: 365px;
+    padding: 75px 0 48px;
+}
+
+.footer-main {
+    margin-bottom: 56px;
+}
+
+.footer-main section {
+    height: 161px;
+}
+
+.footer-main section:first-child {
+    background: url("../images/bg/logo_foooter.svg") 
+                no-repeat;
+    width: 540px;
+    font: 500 15px/25px 'Manrope', sans-serif;
+    color: #fff;
+    padding-top: 61px;
+}
+
+.footer-main section:first-child p {
+    opacity: 0.5;
+    margin-top: auto;
+}
+
+.footer-main section:last-child {
+    width: 430px;
+}
+
+.footer-main nav a {
+    font: 700 13px/25px 'Manrope', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.footer-nav {
+    flex-direction: column;
+}
+
+.footer-nav nav {
+    width: 100%;
+}
+
+.copyright {
+    font: 700 15px/25px 'Manrope', sans-serif;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.social {
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.fb:hover,
+.instagram:hover,
+.twitter:hover {
+    fill: #D87D4A;
+}
+
+nav a:hover {
+    color: #D87D4A;
+}
+
+.middle-nav a:hover {
+    opacity: 1;
+}
+
+.header-bottom button:hover {
+    background-color: #FBAF85;
+}
+
+.main-item button:hover {
+    background-color: #4C4C4C;
+}
+
+.second-item button:hover,
+.third-item button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+}
+
+footer .content::before {
+    content: '';
+    display: block;
+    background-color: #D87D4A;
+    width: 101px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+}
+/* --/ END MAIN STYLES /-- */
+
+
+/* --/ MEDIA QUERIES STYLES /-- */
+@media (max-width: 800px) {
+
+    .content {
+        max-width: 770px;
+        padding: 0 40px;
+    }
+
+    main {
+        margin-bottom: 0;
+    }
+
+    .middle-nav {
+        padding: 25px 0 95px;
+    }
+
+    .middle-nav ul.flexcon {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    .middle-nav li {
+        min-height: 217px;
+    }
+
+    .mid-nav-content {
+        min-height: 165px;
+        width: 223px;
+        padding: 88px 0 22px;
+    }
+
+    .mid-nav-content {
+        background: url(../images/bg/shadow_800.png) 
+                    no-repeat 50% 0% #F1F1F1;
+    }
+
+    .headphones::before {
+        content: url(../images/bg/headphones_800.svg);
+    }
+
+    .speakers::before {
+        content: url(../images/bg/speakers_800.svg);
+    }
+
+    .earphones::before {
+        content: url(../images/bg/earphones_800.svg);
+    }
+
+    .item {
+        font: 700 15px/20px 'Manrope', sans-serif;
+        letter-spacing: 1.07143px;
+    }
+
+    .main-item {
+        height: 720px;
+        background: url(../images/bg/rings_bg_800.png) 
+                    no-repeat top center #D87D4A;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 116px;
+        margin-bottom: 44px;
+    }
+
+    .main-item article {
+        padding: 0;
+        text-align: center;
+    }
+
+    .main-item img {
+        width: 198px;
+        height: 237px;
+        top: 52px;
+        left: 0px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .content {
+        max-width: 375px;
+        padding: 0 24px;
+    }
+
+    .middle-nav {
+        padding: 48px 0 120px;
+    }
+
+    .mid-nav-content {
+        width: 327px;
+    }
+
+    .middle-nav ul.flexcon {
+        gap: 16px;
+    }
+
+    .main-item {
+        height: 600px;
+        background: url(../images/bg/rings_bg_500.png) 
+                    no-repeat top center #D87D4A;
+        padding: 0 24px;
+        gap: 88px;
+    }
+
+    .main-item img {
+        width: 172px;
+        height: 208px;
+        top: 55px;
+    }
+
+    .itemh2 {
+        font: 36px/40px 'Manrope', sans-serif;
+        letter-spacing: 1.28571px;
+        max-width: 175px;
+        margin: 0 auto 24px;
+
+    }
+
+    .description {
+        margin-bottom: 24px;
+    }
+
+    .main-item article {
+        max-width: 100%;
+    }
+
+}
+/* --/ END MEDIA QUERIES STYLES /-- */
